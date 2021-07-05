@@ -279,8 +279,8 @@ float Adafruit_TSL2591::calculateLux(uint16_t ch0, uint16_t ch1) {
  // lux = (((float)ch0 - (float)ch1)) * (1.0F - ((float)ch1 / (float)ch0)) / cpl;
 
   // Alternate lux calculation 2
-   lux = ( (float)ch0 - ( 1.7F * (float)ch1 ) ) / 1;//cpl;
-
+   //lux = ( (float)ch0 - ( 1.7F * (float)ch1 ) ) / 1;//cpl;
+lux = 1;
   // Signal I2C had no errors
   return lux;
 }
