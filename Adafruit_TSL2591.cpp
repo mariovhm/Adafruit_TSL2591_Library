@@ -204,7 +204,7 @@ tsl2591IntegrationTime_t Adafruit_TSL2591::getTiming() { return _integration; }
 
 /************************************************************************/
 /*!
-    @brief  Calculates the visible Lux based on the two light sensors
+    @brief  Calculates 123 the visible Lux based on the two light sensors
     @param  ch0 Data from channel 0 (IR+Visible)
     @param  ch1 Data from channel 1 (IR)
     @returns Lux, based on AMS coefficients (or < 0 if overflow)
